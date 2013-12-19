@@ -10,20 +10,12 @@ angular.module('myApp', [
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
-    when('/', {
-      templateUrl: 'partials/partial1',
-      controller: 'mainCtrl'
-    }).
     when('/store', {
       templateUrl: 'partials/index',
       controller: 'storeCtrl'
     }).
     otherwise({
-      redirectTo: '/'
-    }).
-    when('/cart', {
-        templateUrl: 'partials/cart', 
-        controller: 'cartCtrl'
+      redirectTo: '/store'
     });
 
   $locationProvider.html5Mode(true);
