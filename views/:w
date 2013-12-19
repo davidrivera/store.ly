@@ -1,0 +1,26 @@
+.abs.store(ng-controller='cartCtrl', style="display:{{showStore()}};direction: rtl;", class="{{injectClass()}}")
+  .row
+    .col-sm-2.hover(ng-click="showSidebar()")
+      i.fa.fa-shopping-cart.fa-3x(style='margin-top:10px; ')
+    .col-sm-7.hover(ng-click="showSidebar()")
+      h4 Your Cart 
+        br
+        small ${{total()}}.00 {{numItems()}} totalling 
+    .col-sm-2(style="display:{{_sidebar()}}")
+      i.fa.fa-times.fa-2x(ng-click="hideSidebar()")
+  ul.nav.nav-pills.nav-stacked(style="display:{{_sidebar()}}")
+    li(ng-repeat="item in items")
+      .row
+        .col-sm-2
+          img(src='/img/x-box.png',  width=40)
+        .col-sm-7
+          p {{item.val.ItemAttributes.Title}}
+        .col-sm-1
+            $20.00
+        .col-sm-1
+          i.fa.fa-times-circle-o.fa-2x(ng-click='removeFromCart(item)')
+    .bottom        
+      hr
+      .row
+        .col-sm-6 :Total
+        .col-sm-6 ${{total()}}.00

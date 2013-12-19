@@ -1,0 +1,13 @@
+{
+    "name": "store.ly",
+    "version": "0.0.1",
+    "author": "David Rivera <David.R.Rivera193@gmail.com>",
+    "dependencies": {
+        "express": "~3.2.6",
+        "jade": "~0.31.2",
+        "aws-lib":"0.3.0"
+    },
+    "scripts": {
+        "start": "node app"
+    }
+}

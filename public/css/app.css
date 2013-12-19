@@ -1,0 +1,95 @@
+/* app css stylesheet */
+html, body{
+    /*background-color:#f4f4f4 !important; */
+}
+.abs{
+    position: fixed;
+    right: 0px;
+    top: 0;
+    margin-right:20px; 
+    min-width:300px;
+    max-width: 350px; 
+    height:100%; 
+
+}
+.scrolls{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content{
+    position:relative;
+}
+.add-to-cart-btn{
+    display:none; 
+    cursor:pointer; 
+}
+.fadeload:hover{
+    opacity: 0.7;
+}
+.fadeload{
+ display: block;
+    
+    -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+         -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+}
+.fa-times{
+    margin-top:10px;
+   cursor:pointer; 
+   display:none; 
+}
+.fa-times-circle-o{
+    cursor:pointer;
+}
+.fa-search
+{
+  position:relative;
+  left:20px;
+  z-index:999;
+}
+.input-append input
+{
+  padding-left:25px !important;;
+width:200px;
+}
+.hover{
+    cursor:pointer; 
+}
+.bottom{
+    width:100%; 
+}
+.margin-form, .navbar-form{
+    display:inline-block; 
+    margin-bottom:20px; 
+}
+.number{
+ color:#C0C0C0; 
+ position:absolute; 
+ font-weight:bold; 
+ font-size:177px; 
+ z-index:-1; 
+ margin-left:-110px; 
+}
+.main-page{
+    display:block; 
+}
+.store{
+    display:none; 
+}
+.image:hover > .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+}
+.image {
+    background: url('/img/x-box.png');
+width: 125px;
+height: 94px;
+background-size: 100% auto;
+background-repeat: no-repeat;
+    position:relative;
+}
